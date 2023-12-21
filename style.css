@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  background-color:#191970;
+}
+
+#PageTitle {
+  color: #c0c0f2;
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+}
+
+#board {
+  width: 100vw;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-content: center;
+}
+
+.cell {
+  border: 2px solid #c0c0f2;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  line-height: 90px;
+  font-size: 80px;
+  color: #c0c0f2;
+  background-color:#191970;
+  cursor: pointer; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.formText {
+  color: #c0c0f2;
+  font-family: serif;
+  border-radius: 3px;
+  font-size: 100%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #c0c0f2;
+  display: inline-block;
+  margin:0 20px;
+}
+
+#Container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0; 
+}
+
+#Container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+
+#btn1 {
+  top: 50%;
+  left: 45%;
+  background-color: #c0c0f2;
+  color: #191970;
+  font-family: serif;
+  font-size: 100%;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#btn2 {
+  top: 50%;
+  left: 45%;
+  background-color: #c0c0f2;
+  color: #191970;
+  font-family: serif;
+  font-size: 100%;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#restartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#restart {
+  background-color: #d5d5f6;
+  color: #191970;
+  font-family: serif;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+}
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+  border-left: none;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: none;
+}
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+  border-right: none;
+}
